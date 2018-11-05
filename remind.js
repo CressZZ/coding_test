@@ -753,7 +753,6 @@ console.log(solution11(10, 100, []))
  * 
  */
 
-
 function solution12(N, Q, B, C) {
     var singleBucketListObj = createSingleBucketListObj(B);
     return enterBall(singleBucketListObj, B, C, Q)
@@ -815,9 +814,10 @@ function isSameColorByLimit(arr, targetSameColorNumber) {
 
 console.log(solution12(3, 2, [1, 2, 0, 1, 1, 0, 0, 1], [0, 3, 0, 2, 0, 3, 0, 0]))
 
-
-// d(91) = 9 + 1 + 91 = 101
-
+/**
+ * 넥슨 문제
+ * d(91) = 9 + 1 + 91 = 101
+ */
 function generate(generator) {
     var test = String(generator).split('').map((e) => Number(e))
     test.splice(0, 0, generator)
@@ -989,10 +989,11 @@ function solutionx(A) {
         }
 
     })
-    // console.log(countHead);
-    // console.log(countTail)
-    // console.log(Math.min(countHead, countTail))
     return Math.min(countHead, countTail)
-    // write your code in JavaScript (Node.js 8.9.4)
 }
 console.log("\n야놀자 테스트 (2) : ", solutionx([0, 0, 1, 1, 0]))
+
+
+/**
+ * 
+ */
